@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="/add" method="POST" id="form">
+        <input type="text" value="10" name="a">
+        <br>
+        <input type="text" value="20" name="b">
+        <br>
+        <button type="submit">add</button>
+          </form>
+
+        <script>
+         document.getElementById("form").addEventListener("submit", function(e) {
+           e.preventDefault(); // stop reload
+
+           const a = document.getElementById("a").value;
+           const b = document.getElementById("b").value;
+
+           fetch("/add", {
+             method: "POST",
+             headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: `a=${a}&b=${b}`
+         })
+        .then(res => res.text())
+       .then(data => {
+            document.getElementById("result").innerText = data;
+       });
+    });
+  </script>
+        
+  
+    
+    
+</body>
+</html>

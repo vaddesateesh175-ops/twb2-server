@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>counter:<span id="d1"> </span></h1>
+    <button onclick="increment()">increment</button>
+    <button onclick="decrement()">decrement</button>
+    <script>
+        fetch("http://localhost:3600/counter")
+        .then(res=>res.json())
+        .then(data=>document.getElementById("d1").innerText=data)
+
+        function increment(){
+            fetch("http://localhost:3600/inc")
+            .then(res=>res.json())
+            .then(data=>document.getElementById("d1").innerText=data)
+        }
+
+        function decrement(){
+            fetch("http://localhost:3600/dec")
+            .then(res=>res.json())
+            .then(data=>document.getElementById("d1").innerText=data)
+        }
+    </script>
+</body>
+</html>
