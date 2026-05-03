@@ -52,6 +52,21 @@ app.get("/images",(req,res)=>{
   })
 })
 
+app.get("/:id",(req,res)=>{
+  imagesModel.findById(_id=req.params.id).then((data)=>{
+    res.send(data)
+  })
+})
+
+app.post("/like/:id",(req,res)=>{
+  imagesModel.findById(_id=req.params.id).then((data)=>{
+    data.Likes=data.Likes+1
+    data.save()
+    res.send(data)
+  })
+
+})
+
 app.listen(process.env.PORT || 3600, () => {
   console.log("server 3600 port lo vintundi");
 });
