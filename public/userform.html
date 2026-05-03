@@ -1,21 +1,22 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form  action="/addlead" method="POST">
+    <form action="/uploaduser" method="POST" enctype="multipart/form-data">
         <input type="text" name="fullname" placeholder="fullname">
         <br>
-        <input type="text" name="course" placeholder="course">
+        <input type="text" name="city" placeholder="city">
         <br>
-        <input type="text" name="mode" placeholder="mode">
+        <input type="file" name="profilepic" placeholder="">
         <br>
-        <button>Add Lead</button>
-    </form>
+        <button>Add User</button>
+        </form>
 </body>
+
 </html>
