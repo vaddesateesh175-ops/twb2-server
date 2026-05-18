@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "id": 1
+  },
+  {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "id": 2
+  },
+  {
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "id": 3
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "id": 4
+  },
+  {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "id": 5
+  },
+  {
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "id": 6
+  },
+  {
+    "title": "Ikigai",
+    "author": "Hector Garcia",
+    "id": 7
+  },
+  {
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "id": 8
+  },
+  {
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "id": 9
+  },
+  {
+    "title": "Wings of Fire",
+    "author": "A.P.J. Abdul Kalam",
+    "id": 10
+  },
+  {
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "id": 11
+  },
+  {
+    "title": "The 7 Habits of Highly Effective People",
+    "author": "Stephen R. Covey",
+    "id": 12
+  },
+  {
+    "title": "Can't Hurt Me",
+    "author": "David Goggins",
+    "id": 13
+  },
+  {
+    "title": "Start With Why",
+    "author": "Simon Sinek",
+    "id": 14
+  },
+  {
+    "title": "The Power of Now",
+    "author": "Eckhart Tolle",
+    "id": 15
+  },
+  {
+    "title": "Do Epic Shit",
+    "author": "Ankur Warikoo",
+    "id": 16
+  },
+  {
+    "title": "Steve Jobs",
+    "author": "Walter Isaacson",
+    "id": 17
+  },
+  {
+    "title": "The Monk Who Sold His Ferrari",
+    "author": "Robin Sharma",
+    "id": 18
+  },
+  {
+    "title": "Rework",
+    "author": "Jason Fried",
+    "id": 19
+  },
+  {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "id": 20
+  }
+]
