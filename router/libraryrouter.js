@@ -34,17 +34,7 @@ router.post("/addbook", (req,res)=>{
 })
 
 
-router.delete("/:id",(req,res)=>{
-    book.findByIdAndDelete(_id=req.params.id).then((data)=>{
-        res.send({msg:"book deleted successfully"})
-    })
-})
 
-router.get("/:id",(req,res)=>{
-    book.findById(_id=req.params.id).then((data)=>{
-        res.send(data)
-    })
-})
 
 
     
@@ -59,6 +49,18 @@ router.get("/books/:username",(req,res)=>{
     }) 
 })
 
+
+router.delete("/:id",(req,res)=>{
+    book.findByIdAndDelete(_id=req.params.id).then((data)=>{
+        res.send({msg:"book deleted successfully"})
+    })
+})
+
+router.get("/:id",(req,res)=>{
+    book.findById(_id=req.params.id).then((data)=>{
+        res.send(data)
+    })
+})
 
 
 module.exports=router;
