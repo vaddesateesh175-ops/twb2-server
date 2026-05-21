@@ -4,6 +4,7 @@ dotenv.config();
 var express = require("express");
 var app = express();
 var fs = require("fs");
+var path = require("path");
 var jwt = require("jsonwebtoken");
 var cors = require("cors");
 var mongoose = require("mongoose");
@@ -27,6 +28,7 @@ dns.setServers(["1.1.1.1","8.8.8.8"])
 connectDB();
 app.use(cors());
 
+app.use(express.static(path.join(__dirname,"dist")));
 
 app.use("/",login);
 app.use("/",books);
