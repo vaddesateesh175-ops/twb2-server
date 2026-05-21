@@ -28,7 +28,7 @@ dns.setServers(["1.1.1.1","8.8.8.8"])
 connectDB();
 app.use(cors());
 
-app.use(express.static(path.join(__dirname,"dist")));
+
 
 app.use("/",login);
 app.use("/",books);
